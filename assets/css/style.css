@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  color: #111111;
+  font-family: sans-serif;
+  background-color: bisque;
+}
+
+.table { 
+  border: 3px solid #fff;
+  min-width: 705px;
+  margin: 50px auto;
+  border-collapse: collapse;
+}
+
+
+/* Кольори фона для клітинок в хедері таблиці */
+.first-col-bg {
+  background-color: #7887ab;
+}
+
+.second-col-bg {
+  background-color: #4f628e;
+}
+
+.third-col-bg {
+  background-color: #2e4172;
+}
+
+.fourth-col-bg {
+  background-color: #162955;
+}
+
+.fifth-col-bg {
+  background-color: #061539;
+}
+
+.price-styles {
+  margin:10px 0 -10px;
+  font-size: 32px;
+}
+
+.table-header {
+  color: #fff;
+}
+
+.table-header-cell {
+  padding: 15px;
+}
+
+.table-body {
+  font-size: 14px;
+}
+
+.table-cell {
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+/* Якщо без псевдоелементів, то це робиться просто додаванням різних классів і далі указувати їм особисто колір. Це довго і нудно. */
+.table-row:nth-child(odd) .table-cell:nth-child(odd) {
+  background-color: #dbdbdb;
+}
+
+.table-row:nth-child(odd) .table-cell:nth-child(even) {
+  background-color: #e7e7e7;
+}
+
+.table-row:nth-child(even) .table-cell:nth-child(odd) {
+  background-color: #ececec;
+}
+
+.table-footer-button {
+  background-color: #d3d3d3;
+  border: 1px solid #b6b6b6;
+  text-transform: uppercase;
+  color: #3a3737;
+  padding: 5px 20px;
+}
